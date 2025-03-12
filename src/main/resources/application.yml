@@ -1,0 +1,39 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: false
+      datasource:
+        master:
+          username: dbdev
+          password: devccWrE20&d!Pt
+          url: jdbc:postgresql://39.103.208.182:5432/mhaq_haier
+          driver-class-name: org.postgresql.Driver
+        item:
+          username: dbdev
+          password: devccWrE20&d!Pt
+          url: jdbc:postgresql://39.103.208.182:5432/mhaq_haier
+          driver-class-name: org.postgresql.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: com.mhaq.collect.entity
+  type-enums-package: com.mhaq.collect.entity
+  configuration:
+    cache-enabled: false
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+logging:
+  level:
+    com:
+      demo:
+        system:
+          mapper: debug
+
+lab: D:\CLab\
+labname: 10HP焓差D室
+
+
