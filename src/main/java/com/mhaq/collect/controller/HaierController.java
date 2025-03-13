@@ -37,11 +37,7 @@ public class HaierController {
     }
 
 
-    @GetMapping("/test")
-    public void test() {
-        TXZSerialHandler txzSerialHandler = new TXZSerialHandler();
-        txzSerialHandler.testTxz();
-    }
+
 
 
 
