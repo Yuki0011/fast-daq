@@ -184,6 +184,7 @@ public class DataCollectHandler {
             labItem.setId(oItem.getId());
             return;
         }
+        
         labItemService.saveItem(labItem);
     }
 
