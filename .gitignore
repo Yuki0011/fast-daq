@@ -31,3 +31,23 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of the go coverage tool
+*.out
+
+# Binary
+/fast-daq
+/cmd/fast-daq/fast-daq
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
